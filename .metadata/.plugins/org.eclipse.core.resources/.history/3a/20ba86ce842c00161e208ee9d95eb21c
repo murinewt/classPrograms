@@ -1,0 +1,16 @@
+package readInput;
+
+import java.util.Scanner;
+
+public class ReadInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter you name: ");
+		Scanner read = new Scanner(System.in);
+		double name = read.nextdouble();
+		System.out.println("hello " +name);
+
+	}
+
+}

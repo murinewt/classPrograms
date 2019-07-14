@@ -1,0 +1,100 @@
+package tetrisNewton;
+
+import java.awt.Graphics;
+
+public class Shapes {
+	static Shape Shape;
+	static Graphics g;
+	public int xPoint,yPoint;
+	public final static int SIZE = 20;
+	//boolean left,right,down;
+	static int direction = 10;
+	int x=2;
+	static boolean left, right; 
+	static boolean down = true;
+	Board mainP;
+	
+	public Shapes(int xOnly , int y){
+		xPoint = xOnly;
+		yPoint = y;
+		
+	}
+	
+	public Shapes(){
+		Shape  = new Shape(210,30);
+		left=right=false;
+		down=true;
+	}
+	
+	public static void moveLeft(){
+		tetrisNewton.Shape.xPoint = tetrisNewton.Shape.xPoint - direction;
+		//Shape.draw(g, 1);
+		left=true;
+	}
+	
+	public static void moveRight(){
+		tetrisNewton.Shape.xPoint = tetrisNewton.Shape.xPoint + direction;
+		//Shape.draw(g, 1);
+		right=true;
+	}
+	
+	public void move(){
+		if(left==true){
+			moveLeft();
+		}
+		else if(right==true){
+			moveRight();
+		}	
+	}// end of move*/
+
+	public void rotate(){
+		if(mainP.rand==1||mainP.rand==2 || mainP.rand==3 || mainP.rand==4){
+			if(mainP.rand==1)
+				mainP.drawDrop(g, 2);
+			else if(mainP.rand==2)
+				mainP.drawDrop(g, 3);
+			else if(mainP.rand==3)
+				mainP.drawDrop(g, 4);
+			else if(mainP.rand==4)
+				mainP.drawDrop(g, 1);
+		}
+		if(mainP.rand==5||mainP.rand==6||mainP.rand==7||mainP.rand==8){
+			if(mainP.rand==5)
+				mainP.drawDrop(g, 6);
+			else if(mainP.rand==6)
+				mainP.drawDrop(g, 7);
+			else if(mainP.rand==7)
+				mainP.drawDrop(g, 8);
+			else if(mainP.rand==8)
+				mainP.drawDrop(g, 5);
+		}
+		if(mainP.rand==10||mainP.rand==11){
+			if(mainP.rand==10)
+				mainP.drawDrop(g, 11);
+			else if(mainP.rand==11)
+				mainP.drawDrop(g, 10);
+		}
+		if(mainP.rand==12||mainP.rand==13){
+			if(mainP.rand==12)
+				mainP.drawDrop(g, 13);
+			else if(mainP.rand==13)
+				mainP.drawDrop(g, 12);
+		}
+		if(mainP.rand==14||mainP.rand==15){
+			if(mainP.rand==14)
+				mainP.drawDrop(g, 15);
+			else if(mainP.rand==15)
+				mainP.drawDrop(g, 14);
+		}
+		if(mainP.rand==16||mainP.rand==17||mainP.rand==18||mainP.rand==19){
+			if(mainP.rand==16)
+				mainP.drawDrop(g, 17);
+			else if(mainP.rand==17)
+				mainP.drawDrop(g, 18);
+			else if(mainP.rand==18)
+				mainP.drawDrop(g, 19);
+			else if(mainP.rand==19)
+				mainP.drawDrop(g, 16);
+		}
+	}
+}

@@ -1,0 +1,4 @@
+package exceptionHandling;
+
+public class NumberTooLargeException extends OutOfRangeException{
+}

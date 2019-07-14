@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="241" key="DIALOG_Y_ORIGIN"/>
+		<item value="414" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="40" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="40"/>
+			<item value="sizeLeng/6.0"/>
+			<item value="y+"/>
+			<item value="x+"/>
+			<item value="Ellipse"/>
+			<item value="filename"/>
+			<item value="+200"/>
+			<item value="+180"/>
+		</list>
+		<list key="replacehistory">
+			<item value="flowerLength"/>
+			<item value="sizeLeng/6.0"/>
+			<item value=" "/>
+			<item value="Ellipse2D"/>
+			<item value=""/>
+			<item value="Integer"/>
+			<item value="print"/>
+			<item value="outputBook"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="295" key="DIALOG_WIDTH"/>
+		<item value="1|Lucida Handwriting|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Lucida Handwriting" key="DIALOG_FONT_NAME"/>
+		<item value="388" key="DIALOG_HEIGHT"/>
+		<item value="190" key="DIALOG_Y_ORIGIN"/>
+		<item value="1029" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

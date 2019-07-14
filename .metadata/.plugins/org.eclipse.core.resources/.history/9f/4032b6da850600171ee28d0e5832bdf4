@@ -1,0 +1,104 @@
+package tetrisNewton;
+
+import java.awt.Graphics;
+
+public class Shapes {
+	static Shape Shape;
+	static Graphics g;
+	public int xPoint,yPoint;
+	public final static int SIZE = 20;
+	//boolean left,right,down;
+	static int direction = 10;
+	int x=2;
+	static boolean left, right; 
+	static boolean down = true;
+	Board Board;
+	//int rand = (int)(Math.random() * 19)+1;
+	
+	public Shapes(int xOnly , int y){
+		xPoint = xOnly;
+		yPoint = y;
+		
+	}
+	
+	public Shapes(){
+		Shape  = new Shape(210,30);
+		left=right=false;
+		down=true;
+	}
+	
+	public static void moveLeft(){
+		tetrisNewton.Shape.xPoint = tetrisNewton.Shape.xPoint - direction;
+		//Shape.draw(g, 1);
+		left=true;
+	}
+	
+	public static void moveRight(){
+		tetrisNewton.Shape.xPoint = tetrisNewton.Shape.xPoint + direction;
+		//Shape.draw(g, 1);
+		right=true;
+	}
+	
+	public void move(){
+		if(left==true){
+			moveLeft();
+		}
+		else if(right==true){
+			moveRight();
+		}	
+	}// end of move*/
+
+	public int rotate(){
+		if(Board.getRand()==1||Board.getRand()==2 || Board.getRand()==3 || .Board.getRand()==4){
+			if(Board.getRand()==1)
+				return 2;
+			else if(Board.getRand()==2)
+				return 3;
+			else if(Board.getRand()==3)
+				return 4;
+			else if(Board.getRand()==4)
+				return 1;
+		}
+		else if(Board.getRand()==5||Board.getRand()==6||Board.getRand()==7||Board.getRand()==8){
+			if(Board.getRand()==5)
+				return 6;
+			else if(Board.getRand()==6)
+				return 7;
+			else if(Board.getRand()==7)
+				return 8;
+			else if(Board.getRand()==8)
+				return 5;
+		}
+		else if(Board.getRand()==10||Board.getRand()==11){
+			if(Board.getRand()==10)
+				return 11;
+			else if(Board.getRand()==11)
+				return 10;
+		}
+		else if(Board.getRand()==12||Board.getRand()==13){
+			if(Board.getRand()==12)
+				return 13;
+			else if(Board.getRand()==13)
+				return 12;
+		}
+		else if(Board.getRand()==14||Board.getRand()==15){
+			if(Board.getRand()==14)
+				return 15;
+			else if(Board.getRand()==15)
+				return 14;
+		}
+		else if(Board.getRand()==16||Board.getRand()==17||Board.getRand()==18||Board.getRand()==19){
+			if(Board.getRand()==16)
+				return 17;
+			else if(Board.getRand()==17)
+				return 18;
+			else if(Board.getRand()==18)
+				return  19;
+			else if(Board.getRand()==19)
+				return 16;
+		}
+		else 
+			 Board.setRand((int)(Math.random() * 19)+1);
+		return Board.getRand();
+	}
+}

@@ -1,0 +1,29 @@
+package groupTheory;
+
+public class CompositionMapping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for(int x=1;x<11;x++){
+			for(int y=0;y<11;y++){
+				/*while(x==1&&y==1){
+					System.out.println(x*y+"	");
+					x++;y++;
+				}*/
+				if(x==1&&y==1){
+					for(int q=1;q<1;q++){
+						for(int w=1;w<1;w++){
+							System.out.print(q*w+"	");
+						}
+						System.out.println();
+					}
+				}
+				System.out.print(x*y+"	");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

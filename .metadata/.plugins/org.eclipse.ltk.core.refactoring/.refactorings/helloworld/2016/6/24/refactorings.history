@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;readInput.ReadInput.main().read&apos; in &apos;readInput.ReadInput.main()&apos;&#x0D;&#x0A;- Original project: &apos;helloworld&apos;&#x0D;&#x0A;- Original element: &apos;readInput.ReadInput.main().read&apos;" description="Inline local variable &apos;read&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;readInput{ReadInput.java" selection="213 29" stamp="1465285393606" version="1.0"/>
+</session>

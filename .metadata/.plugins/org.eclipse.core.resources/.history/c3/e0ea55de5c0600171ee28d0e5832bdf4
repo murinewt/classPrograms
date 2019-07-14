@@ -1,0 +1,52 @@
+package tetrisNewton;
+
+import java.awt.Graphics;
+
+public class Shapes {
+	static Shape chora;
+	static Graphics g;
+	public int xPoint,yPoint;
+	public final static int SIZE = 15;
+	//boolean left,right,down;
+	static int direction = 10;
+	int x=2;
+	boolean left, right; 
+	boolean down = true;
+	
+	public Shapes(int xOnly , int y){
+		xPoint = xOnly;
+		yPoint = y;
+		
+	}
+	
+	public Shapes(){
+		chora  = new Shape(180,30);
+		left=right=false;
+		down=true;
+	}
+	
+	public static void moveLeft(){
+		chora.xPoint = chora.xPoint - direction;
+		chora.draw(g, 1);
+		
+	}
+	
+	public static void moveRight(){
+		chora.xPoint = chora.xPoint + direction;
+		chora.draw(g, 1);
+	}
+	
+	public void move(){
+		if(left==true){
+			moveLeft();
+		}
+		else if(right==true){
+			moveRight();
+		}	
+	}// end of move*/
+	
+	
+	
+	
+
+}

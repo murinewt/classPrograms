@@ -1,0 +1,39 @@
+package javagurus;
+import java.applet.Applet;
+import java.awt.*;
+public class Cartoon extends Applet {
+	public void paint(Graphics newt){
+		//all comments are from my view not the persons body
+		newt.drawOval(150, 50, 100, 100);//big face
+		newt.drawOval(165, 70, 20, 20);//left eye
+		newt.drawOval(215, 70, 20, 20);//right eye
+		newt.drawOval(180, 120, 40, 15);//mouth
+		newt.drawRect(190, 150, 20, 50);//neck
+		newt.drawRect(150, 200, 100, 120);//stomach
+		newt.drawRect(170, 320, 10, 60);//left leg
+		newt.drawRect(220, 320, 10, 60);//right leg
+		//left leg
+		newt.drawLine(170, 380, 190, 400);
+		newt.drawLine(180, 380, 200, 400);
+		//right leg
+		newt.drawLine(220, 380, 240, 400);
+		newt.drawLine(230, 380, 250, 400);
+		//right hand
+		newt.drawLine(250, 220, 280, 220);
+		newt.drawLine(250, 230, 270, 230);
+		newt.drawLine(280, 220, 280, 260);
+		newt.drawLine(270, 230, 270, 260);
+		newt.drawLine(280, 260, 300, 270);
+		newt.drawLine(270, 260, 290, 270);
+		//left hand
+		newt.drawLine(120, 220, 150, 220);
+		newt.drawLine(130, 230, 150, 230);
+		newt.drawLine(120, 220, 120, 260);
+		newt.drawLine(130, 230, 130, 260);
+		newt.drawLine(120, 260, 140, 270);
+		newt.drawLine(130, 260, 150, 270);
+		//stick
+		newt.drawLine(120, 265, 295, 265);
+	}
+
+}

@@ -1,0 +1,6 @@
+package exceptionHandling;
+
+@SuppressWarnings("serial")
+class NumberTooLargeException extends OutOfRangeException {
+
+}

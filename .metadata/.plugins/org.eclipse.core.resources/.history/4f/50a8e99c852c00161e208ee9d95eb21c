@@ -1,0 +1,16 @@
+package readInput;
+
+import java.util.Scanner;
+
+public class ReadInput {
+
+	public static void main(String[] args) {
+		System.out.println("enter you name: ");
+		int name= 10;
+		System.out.println("hello " +name);
+		char nm = 'm';
+		char big = Character.toUpperCase(nm);
+		System.out.print(big);
+		
+	}
+}

@@ -1,0 +1,20 @@
+package javagurus;
+import java.applet.Applet;
+import java.awt.*;
+public class Cartoon extends Applet {
+	public void paint(Graphics newt){
+		newt.drawOval(150, 50, 100, 100);
+		newt.drawOval(165, 70, 20, 20);
+		newt.drawOval(215, 70, 20, 20);
+		newt.drawOval(180, 120, 40, 15);
+		newt.drawRect(190, 150, 20, 50);
+		newt.drawRect(150, 200, 100, 120);
+		newt.drawRect(170, 320, 10, 60);
+		newt.drawRect(220, 320, 10, 60);
+		newt.drawLine(170, 380, 190, 400);
+		newt.drawLine(180, 380, 200, 400);
+		newt.drawLine(220, 380, 250, 400);
+		newt.drawLine(230, 380, 260, 400);
+	}
+
+}

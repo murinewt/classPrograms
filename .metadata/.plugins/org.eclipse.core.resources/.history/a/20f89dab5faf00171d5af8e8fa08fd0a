@@ -1,0 +1,45 @@
+package groupTheory;
+
+public class CompositionMapping {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=3;
+		String[] rotate= new String[x];
+		String[] alphabet = {"A","B","C","D","E","F","G","H","I"};
+		String[] numOf = new String[x];
+		for(int a=0;a<x;a++){
+			numOf[a]=alphabet[a];
+			System.out.println(numOf[a]);;
+		}
+		for(int b=0;b<x;b++){
+			rotate[b]="X"+b;
+			System.out.println(rotate[b]);
+		}
+		
+		rotate[0]="sdf";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*for(int x=1;x<11;x++){
+			for(int y=1;y<11;y++){
+				if(x==1&&y==1){
+					for(int q=1;q<11;q++){
+						System.out.println(q+"	");
+					}
+					//x++;y++;
+				}
+				System.out.print(x*y+"	");
+			}
+			System.out.println();
+		}*/
+
+	}
+
+}
