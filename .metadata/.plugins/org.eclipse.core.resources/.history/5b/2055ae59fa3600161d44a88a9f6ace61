@@ -1,6 +1,0 @@
-package exceptionHandling;
-
-@suppressWarnings("serials")
-public class NumberTooLargeException extends OutOfRangeException {
-
-}

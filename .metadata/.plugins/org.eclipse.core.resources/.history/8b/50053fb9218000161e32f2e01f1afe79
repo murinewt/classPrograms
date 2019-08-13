@@ -1,9 +1,0 @@
-package javagurus;
-import java.applet.Applet;
-import java.awt.*;
-public class Cartoon extends Applet {
-	public void draw(Graphics newt){
-		newt.drawOval(50,50,100,100);
-	}
-
-}
